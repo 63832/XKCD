@@ -52,6 +52,7 @@ function getComic(which) {
             console.log('Error: ', error);
         })
 }
+// Laddar in nästa comic
 function preloadNextComic(nextComicNumber) {
     if (nextComicNumber <= maxComic) {
         preloadedImage.src = 'https://xkcd.vercel.app/?comic=' + nextComicNumber;

@@ -22,7 +22,27 @@ footer {
 }
 
 h1 {
-    color: #58718E;
+    background: linear-gradient(to right, #00bcd4, #673ab7, #00bcd4);
+    background-clip: text;
+    color: transparent;
+    animation: spin-gradient 6s ease-in-out infinite;
+}
+
+@keyframes spin-gradient {
+    0% {
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-size: 200% 100%;
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-size: 200% 100%;
+        background-position: 0% 0%;
+    }
 }
 
 .comic-image {
@@ -44,7 +64,7 @@ h1 {
 #comicNav {
     display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     width: 100%;
 
 }
@@ -59,20 +79,20 @@ li {
     color: white;
     font-size: 15px;
     padding: 4px;
-    margin: 0 10px; 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+    margin: 0 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
 }
 
 li:hover {
-    background-color: white;
-    color: #58718E;
+    background-color: rgb(24, 136, 201);
+    color: white;
     cursor: pointer;
 }
 
-#comicNav > ul {
+#comicNav>ul {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }

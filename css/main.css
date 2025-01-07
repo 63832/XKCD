@@ -47,6 +47,8 @@ h1 {
 
 .comic-image {
     width: 100%;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .comic-title {
@@ -54,11 +56,23 @@ h1 {
     font-size: 30px;
 }
 
+.comic-date,
+.comic-number {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 .comic-alt-text {
     font-style: italic;
     text-align: center;
     font-size: 15px;
 }
+
+.comic-number {
+    margin-top: 15px;
+}
+
 
 
 #comicNav {
@@ -84,7 +98,7 @@ li {
 }
 
 li:hover {
-    background-color: rgb(24, 136, 201);
+    background-color: #7D7D95;
     color: white;
     cursor: pointer;
 }
